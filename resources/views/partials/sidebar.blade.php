@@ -119,13 +119,13 @@
                         <span class="menu-title">Dashboard</span>
                     </a>
                 </div>
-                @role('user')
+                {{-- @role('user')
                     @include('partials.sidebar-user')
-                @endrole
+                @endrole --}}
 
-                @role('admin')
+                {{-- @role('admin') --}}
                     @include('partials.sidebar-admin')
-                @endrole
+                {{-- @endrole --}}
             </div>
             <!--end::Menu-->
         </div>
