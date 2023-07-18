@@ -1,0 +1,210 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
+:root {
+    --orange: #FB9C2B;
+    --purple: #512BFB;
+    --light-red: #FB5B5B;
+}
+
+@keyframes skeleton {
+    from { background-position: 100%; }
+    to { background-position: 0%; }
+}
+
+.skeleton {
+    background-image: linear-gradient(
+        90deg,
+        #eee 0%, #eee 40%,
+        #ddd 50%, #ddd 55%,
+        #eee 65%, #eee 100%
+    );
+    background-size: 400%;
+    animation: skeleton 1s infinite;
+}
+
+.divide {
+    height: 1px;
+    border: 1px solid #e6e6e6;
+    margin: 25px 0;
+}
+
+.text-dark-grey {
+    color: #27374D !important;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.text-orange {
+    color: var(--orange) !important;
+}
+
+.text-purple {
+    color: var(--purple) !important;
+}
+
+.text-light-red {
+    color: var(--light-red) !important;
+}
+
+.fs-12 {
+    font-size: 12px !important;
+}
+
+.fs-14 {
+    font-size: 14px !important;
+}
+
+.fs-10 {
+    font-size: 10px !important;
+}
+
+.bg-orange {
+    background-color: var(--orange) !important;
+}
+
+.bg-purple {
+    background-color: var(--purple) !important;
+}
+
+.bg-light-red {
+    background-color: var(--light-red) !important;
+}
+
+.bg-dark-grey {
+    background-color: #8A8989 !important;
+}
+
+.border-orange {
+    border: 1px solid var(--orange) !important;
+}
+
+.border-purple {
+    border: 1px solid var(--purple) !important;
+}
+
+.border-light-red {
+    border: 1px solid var(--light-red) !important;
+}
+
+.border-warning {
+    border: 1px solid #ffc700!important;
+}
+
+.min-height-auto {
+    min-height: auto !important;
+}
+
+.tiny-card {
+    box-shadow: 0 4px 10px #38414a0f !important;
+}
+
+.tiny-card .card-body {
+    padding: 15px 15px !important;
+}
+
+.tiny-card .box-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+
+    img {
+        width: 40px !important;
+        height: 40px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.tiny-card .action-card {
+    top: 1px;
+    right: 5px;
+
+    &-box {
+        border-radius: 5px;
+        padding: 0 5px;
+        transition: ease .2s;
+    }
+}
+
+.hover-bg-success:hover {
+    background-color: rgb(80,205,137,1) !important;
+    color: #fff !important;
+}
+
+.hover-bg-warning:hover {
+    background-color: #ffc700 !important;
+    color: #fff !important;
+}
+
+.hover-bg-orange:hover {
+    background-color: var(--orange) !important;
+    color: #fff !important;
+}
+
+.hover-bg-purple:hover {
+    background-color: var(--purple) !important;
+    color: #fff !important;
+}
+
+.hover-bg-light-red:hover {
+    background-color: var(--light-red) !important;
+    color: #fff !important;
+}
+
+.table tbody tr:last-child td, .table tbody tr:last-child th, .table tfoot tr:last-child td, .table tfoot tr:last-child th {
+    border-bottom: 1px solid #e4e6ef!important;
+}
+
+/**
+    SPINNER
+**/
+
+.spinner-text {
+    margin-left: 10px;
+    width: 4.8px;
+    height: 4.8px;
+    border-radius: 4.8px;
+    box-shadow: 12px 0px 0 0 rgba(71,75,255,0.2), 9.7px 7.1px 0 0 rgba(71,75,255,0.4), 3.7199999999999998px 11.4px 0 0 rgba(71,75,255,0.6), -3.7199999999999998px 11.4px 0 0 rgba(71,75,255,0.8), -9.7px 7.1px 0 0 #474bff;
+    animation: spinner-b87k6z 1s infinite linear;
+ }
+
+ .spinner-huge {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    box-shadow: 20px 0px 0 0 rgba(71,75,255,0.2), 16.2px 11.8px 0 0 rgba(71,75,255,0.4), 6.2px 19px 0 0 rgba(71,75,255,0.6), -6.2px 19px 0 0 rgba(71,75,255,0.8), -16.2px 11.8px 0 0 #474bff;
+    animation: spinner-b87k6z 0.8s infinite linear;
+ }
+
+ @keyframes spinner-b87k6z {
+    to {
+       transform: rotate(360deg);
+    }
+ }
+
+.dropdown-toggle.no-arrow::after {
+    display: none !important;
+}
+
+.btn-action {
+    padding: 3px 12px !important;
+}
+
+.btn-ellipsis i {
+    padding-right: 0 !important;
+}
+
